@@ -141,7 +141,7 @@ int parseCmd(
 		std::cerr << MSG_PROG_NAME << std::endl;
 		arg_print_glossary(stderr, argtable, "  %-25s %s\n");
 		arg_freetable(argtable, sizeof(argtable) / sizeof(argtable[0]));
-		return 1;
+		return ERR_CODE_HELP_REQUESTED;
 	}
 
 	arg_freetable(argtable, sizeof(argtable) / sizeof(argtable[0]));
